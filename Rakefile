@@ -5,9 +5,9 @@ task :deploy do
   puts "## Compiling ruhoh "
   system "ruhoh compile"
   puts "## Deploying branch to Github Pages "
-  cp_r ".nojekyll", "build/.nojekyll"
   cd "compiled/#{REPO}" do
     system "git init ."
+    File.new(".nojekyll", "w").close
     system "git add ."
     system "git add -u"
     puts "\n## Commiting: Site updated at #{Time.now.utc}"

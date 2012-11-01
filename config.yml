@@ -13,4 +13,4 @@ posts:
 pages:
   permalink: 'pretty'
 
-base_path: '/blog'
+base_path: "/blog"
