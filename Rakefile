@@ -9,7 +9,7 @@ task :deploy do
     system "git init ."
     File.new(".nojekyll", "w").close
     cname = File.new("CNAME", "w")
-    cname << "divrb.com"
+    cname << "www.divrb.com"
     cname.close
     system "git add ."
     system "git add -u"
