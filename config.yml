@@ -3,7 +3,7 @@
 
 RuhohSpec: '1.0'
 theme : div
-production_url: http://divrb.com
+production_url: http://div.github.com/blog/
 
 posts:
   permalink: /:categories/:title/
@@ -13,4 +13,4 @@ posts:
 pages:
   permalink: 'pretty'
 
-base_path: "/blog"
+#base_path: '/blog'

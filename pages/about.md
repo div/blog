@@ -2,5 +2,6 @@
 title : About Me
 description:
 ---
+## About
 
-А по русски можно писать?
+This blog is supposed to be a collection of thoughts on internet, programming and whatever I've found interesting.
