@@ -6,11 +6,11 @@ task :deploy do
   system "ruhoh compile"
   puts "## Deploying branch to Github Pages "
   cd "compiled/#{REPO}" do
-    # system "git init ."
-    #File.new(".nojekyll", "w").close
-    # cname = File.new("CNAME", "w")
-    # cname << "www.divrb.com"
-    # cname.close
+    system "git init ."
+    File.new(".nojekyll", "w").close
+    cname = File.new("CNAME", "w")
+    cname << "www.divrb.com"
+    cname.close
     system "git add ."
     system "git add -u"
     puts "\n## Commiting: Site updated at #{Time.now.utc}"
@@ -19,6 +19,6 @@ task :deploy do
     puts "\n## Pushing generated website"
     system "git push git@github.com:#{USER}/#{REPO} master:gh-pages --force"
     puts "\n## Github Pages deploy complete"
-    # system "rm -rf .git"
+    system "rm -rf .git"
   end
 end
