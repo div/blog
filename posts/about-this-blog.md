@@ -1,7 +1,7 @@
 ---
 title: About this blog
 date: '2012-10-31'
-description:
+description: Some details about how is this blog made
 categories:
 ---
 

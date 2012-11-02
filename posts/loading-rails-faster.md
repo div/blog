@@ -2,7 +2,7 @@
 title: Loading rails faster with ruby performance patches
 date: '2012-11-01'
 description:
-categories:
+categories: [ruby]
 ---
 
 You would definitely like to see rails loading faster, and even more important rspec to spin off all the tests without any startup penalties (only if you are not loading rails, of course).
