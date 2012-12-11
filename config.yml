@@ -3,7 +3,7 @@
 
 RuhohSpec: '1.0'
 theme : div
-production_url: http://div.github.com/blog/
+production_url: http://divrb.com
 
 posts:
   permalink: /:categories/:title/

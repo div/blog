@@ -5,36 +5,34 @@ layout : default
   <h1>{{ page.title }} {{# page.tagline }} <small>{{ . }}</small>{{/ page.tagline }}</h1>
 </div> -->
 
-<div class="row">
-  <div class="span8">
+<!-- <div class="row">
+  <div class="span8"> -->
     {{{ content }}}
     <hr>
     <div class="pagination">
-      <ul>
         <ul>
           {{# page?previous }}
-            <li class="prev"><a href="{{ url }}" title="{{ title }}">&larr; Previous</a></li>
+            <span class="prev"><a href="{{ url }}" title="{{ title }}">&larr; Previous</a></span>
           {{/ page?previous }}
           {{^ page?previous }}
-            <li class="prev disabled"><a>&larr; Previous</a></li>
+            <span class="prev disabled"><a>&larr; Previous</a></span>
           {{/ page?previous }}
 
-            <li><a href="/archive">Archive</a></li>
+            <span><a href="/archive">Archive</a></span>
 
           {{# page?next }}
-            <li class="next"><a href="{{ url }}" title="{{ title }}">Next &rarr;</a></li>
+            <span class="next"><a href="{{ url }}" title="{{ title }}">Next &rarr;</a></span>
           {{/ page?next }}
           {{^ page?next }}
-            <li class="next disabled"><a>Next &rarr;</a>
+            <span class="next disabled"><a>Next &rarr;</a></span>
           {{/ page?next }}
         </ul>
-      </ul>
     </div>
     <hr>
-    {{{ comments }}}
-  </div>
+    <!-- {{{ comments }}} -->
+  <!-- </div> -->
 
-  <div class="span4">
+<!--   <div class="span4">
     <h4>Published</h4>
     <div class="date"><span>{{ page.date }}</span></div>
     <br>
@@ -51,5 +49,5 @@ layout : default
       {{> tags_list }}
     {{/ page.tags?to_tags }}
     </ul>
-  </div>
-</div>
+  </div> -->
+<!-- </div> -->
