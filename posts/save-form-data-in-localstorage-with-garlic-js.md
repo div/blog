@@ -1,5 +1,5 @@
 ---
-title:
+title: Saving unsubmitted form data with localStorage and Garlic.js
 date: '2012-12-11'
 description:
 categories:
