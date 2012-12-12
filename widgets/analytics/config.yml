@@ -1,4 +1,4 @@
-layout : google
+layout : div-google
 google :
     tracking_id : 'UA-36971433-1'
 getclicky :
