@@ -61,7 +61,7 @@ private
   end
 
   def queue_processing
-    Resque.enqueue(MyProcessor, self.id)
+    Resque.enqueue(MyWorker, self.id)
   end
 ```
 
